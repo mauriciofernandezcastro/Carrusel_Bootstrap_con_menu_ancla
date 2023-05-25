@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M5Desafio1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <link rel="stylesheet" href="<%= asset_path "main.css" %>" />
+		<noscript><link rel="stylesheet" href="<%= asset_path "noscript.css" %>" /></noscript>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <!-- Scripts -->
+    <script src="<%= asset_path "jquery.min.js" %>"></script>
+    <script src="<%= asset_path "browser.min.js" %>"></script>
+    <script src="<%= asset_path "breakpoints.min.js" %>"></script> 
+    <script src="<%= asset_path "main.js" %>"></script>
+  </body>
+</html>
